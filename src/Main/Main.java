@@ -56,8 +56,10 @@ public class Main {
            int tempNumber = 0;
            boolean hasSequence = true;
            for(char c : s.toCharArray()) {
-               if(Integer.parseInt(String.valueOf(c)) < tempNumber) {
+               if(Integer.parseInt(String.valueOf(c)) <= tempNumber) {
                    hasSequence = false;
+               } else {
+                   tempNumber = Integer.parseInt(String.valueOf(c));
                }
            }
            if(hasSequence)
