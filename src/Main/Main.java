@@ -14,6 +14,7 @@ public class Main {
             if((i & 2) == 0)
                 evenNumbers++;
         }
+        System.out.println("Ilość liczb parzystych:");
         System.out.println(evenNumbers);
     }
 
@@ -66,11 +67,17 @@ public class Main {
                result.add(i);
         }
 
+        System.out.println("Liczby z ciągiem malejącym:");
         for(Integer i : result)
             System.out.println(i);
     }
 
     public static void main(String[] args) throws IOException {
+        System.out.println("Zadanie 4a:");
+        zad4_a();
+        System.out.println("\nZadanie 4b:");
+        zad4_b();
+        System.out.println("\nZadanie 4c:");
         zad4_c();
     }
 }
